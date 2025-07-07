@@ -18,16 +18,16 @@
     <ClInclude Include="defines.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="vector3d.h">
+    <ClInclude Include="namespace.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="namespace.h">
+    <ClInclude Include="vectorSpace.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vector3d.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="vectorSpace.cpp">
+      <Filter>Archivos de recursos</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

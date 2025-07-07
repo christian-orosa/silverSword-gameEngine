@@ -21,10 +21,10 @@
   <ItemGroup>
     <ClInclude Include="defines.h" />
     <ClInclude Include="namespace.h" />
-    <ClInclude Include="vector3d.h" />
+    <ClInclude Include="vectorSpace.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vector3d.cpp" />
+    <ClCompile Include="vectorSpace.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

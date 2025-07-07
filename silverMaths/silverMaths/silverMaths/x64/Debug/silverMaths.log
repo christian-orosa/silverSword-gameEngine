@@ -1,2 +1,3 @@
-﻿  vector3d.cpp
+﻿  vectorSpace.cpp
+D:\projects\silverMaths\silverMaths\silverMaths\vectorSpace.cpp(329,20): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
   silverMaths.vcxproj -> D:\projects\silverMaths\silverMaths\x64\Debug\silverMaths.lib

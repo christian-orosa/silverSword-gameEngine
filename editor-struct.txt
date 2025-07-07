@@ -1,0 +1,63 @@
+/engine
+│
+├── core/                  # Núcleo común (portable a todas las plataformas)
+│   ├── math/              # Librería matemática
+│   ├── memory/            # Allocators, pools, etc.
+│   ├── system/            # Tipos base, logging, strings, etc.
+│   └── config/            # Defines por plataforma, opciones globales
+│
+├── platform/              # Implementaciones específicas por plataforma
+│   ├── pc/
+│   ├── ps1/
+│   ├── ps2/
+│   ├── gbc/
+│   ├── gba/
+│   └── ...
+│
+├── pal/                   # Platform Abstraction Layer (input, files, video)
+│   ├── include/           # Interfaces (headers comunes)
+│   └── src/               # Implementaciones por plataforma
+│
+├── gui/                   # Librería GUI (immediate mode)
+│   ├── widgets/           # Botones, sliders, listas, etc.
+│   ├── themes/            # Estilos
+│   └── backends/          # Dibujado para PC, PS1, GBC...
+│
+├── graphics/              # Motor gráfico (API propia)
+│   ├── renderer/          # Rasterizador principal
+│   ├── scene/             # Escena, cámaras, luces
+│   ├── shaders/           # Lenguaje de shaders o soporte por plataforma
+│   └── backends/          # Implementación según GPU o software
+│
+├── tools/                 # Herramientas externas al runtime
+│   ├── asset_packer/      # Empaquetado de assets por plataforma
+│   ├── shader_compiler/   # Compilador de shaders embebido
+│   └── exporters/         # Exportadores (ISO PS1, .GBC, .EXE...)
+│
+├── editor/                # Editor gráfico estilo Unity/Unreal
+│   ├── windows/           # Jerarquía, inspector, preview, etc.
+│   ├── workspace/         # Layout del editor
+│   ├── scripting/         # Blueprints, AI assistant...
+│   └── runtime/           # Motor del editor (diferente del runtime del juego)
+│
+├── runtime/               # Motor final de ejecución (runtime de los juegos)
+│   ├── entity/            # ECS o Scene Graph
+│   ├── scripting/         # Lógica del juego en C++
+│   └── io/                # Cargador de escenas, niveles, datos
+│
+├── ai/                    # Módulo IA embebido
+│   ├── prompt_engine/     # Motor de prompts y respuestas
+│   ├── embeddings/        # Opcional: datos o mini modelos
+│   └── tools/             # Tooltips, asistentes, autocompletado
+│
+├── export/                # Sistema de exportación por plataforma
+│   ├── pc/
+│   ├── ps1/
+│   ├── gbc/
+│   └── ...
+│
+└── apps/                  # Aplicaciones concretas de prueba y demos
+    ├── demo_editor/       # Versión demo de editor
+    ├── game_test_ps1/     # Proyecto de prueba exportado a PS1
+    └── game_test_pc/
+	
