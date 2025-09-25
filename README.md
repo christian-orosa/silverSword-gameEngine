@@ -36,9 +36,7 @@ EngineCore/
 # 4.HOW TO COMPILE
 In development...
 
-# 5.CONTACT ME
-email: **christian.orosa.gonzalez.@gmail.com**
-Linkedin: **https://www.linkedin.com/in/christian-orosa-gonz%C3%A1lez-6549b32aa/**
+
 ---
 Thank you for visiting this repository!
 
